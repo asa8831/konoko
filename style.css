@@ -1,0 +1,218 @@
+@charset "utf-8";
+/*--------------------------------------------------------------
+   RESET
+--------------------------------------------------------------*/
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,figure{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-size:inherit;font-weight:inherit;}
+legend{color:#000}
+*{zoom: 1;}
+img{vertical-align: bottom;}
+:focus{outline:none;}
+
+
+
+/*--------------------------------------------------------------
+   共通
+--------------------------------------------------------------*/
+body {
+   width: 650px;
+   margin: 0 auto;
+   font-family: "M PLUS Rounded 1c", "Helvetica Neue",
+     Arial,
+     "Hiragino Kaku Gothic ProN",
+     "Hiragino Sans",
+     Meiryo,
+     sans-serif;
+   line-height: 1.5;
+ }
+
+ .back__ground {
+   background-repeat: no-repeat;
+   height: 650px;
+   position: relative;
+   margin-top: 20px;
+ }
+
+ .back__ground__day {
+   background-image: url("img/650.jpg");
+
+ }
+
+ .back__ground__evening {
+   background-image: url("img/650-evening.jpg");
+
+ }
+
+ .back__ground h1 {
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+
+   font-weight: 900;
+   padding: 30px;
+   width: 80%;
+   font-size: 48px;
+   letter-spacing: 0.1em;
+   color: #fbfbfa;
+   text-shadow: 1px 1px 2px #fbfbfa;
+ }
+
+ .back__ground span {
+   /* h1の中のspan */
+   font-size: 20px;
+ }
+
+ .back__ground h2,
+ h3 {
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+
+   font-weight: bold;
+   padding: 10px;
+   width: 70%;
+   font-size: 32px;
+   margin-top: 80px;
+   background-color: #fbfbfa;
+   border-radius: 50px;
+   color: #707070;
+ }
+
+ /*--------------------------------------------------------------
+   ゲームスタート画面
+--------------------------------------------------------------*/
+ /* キャラクター画像共通設定 */
+ .character__input {
+   width: 190px;
+   height: 270px;
+   bottom: 20px;
+   position: absolute;
+   /* background-color: #fbfbfa;
+   border-radius: 5px;
+   border: 2px solid #eee; */
+   opacity: 0;
+ }
+
+ .character__input:hover {
+   cursor: pointer;
+   
+ }
+ 
+ /* キャラクター画像個別設定 */
+ .boys__input {
+   left: 15px;
+  }
+  
+  .girls__input {
+    left: 230px;
+  }
+  
+  .cats__input {
+    right: 15px;
+  }
+  
+  .character__img{
+    width: 200px;
+    
+  }
+
+ 
+
+
+
+/*--------------------------------------------------------------
+   ゲーム画面
+--------------------------------------------------------------*/
+ .game__menu{
+   margin-left: 20px;
+   width: 200px;
+   border: 2px solid #eee;
+   border-radius: 5px;
+
+ }
+
+ .game__menu [type='submit']{
+   color: #707070;
+   display: block;
+   padding: 10px 30px;
+   min-width: 100%;
+   background-color: #fbfbfa;
+   border: none;
+   font-size: 16px;
+ }
+
+ .game__menu [type='submit']:hover{
+   cursor: pointer;
+ }
+
+
+ /* このdivがないと、メッセージと行動選択がくっついてしまう */
+ .game__cats__img__wrap{
+   /* 子要素game__cats__imgのheightをautoにすると高さが同じになる */
+   height: 200px;
+   /* 猫の画像とメッセージの位置をこれで調整している */
+   margin-bottom: 10px;
+ }
+
+ .game__cats__img {
+   width: 220px;
+   height: auto;
+   bottom: 190px;
+   left: 220px;
+   position: absolute;
+ }
+
+ .hp__message{
+   color: #fbfbfa;
+   font-size: 20px;
+   text-align: right;
+   padding: 5px 30px 0 0;
+ }
+
+ .main__message{
+   width: 600px;
+   height: 165px;
+   background-color: #fbfbfa;
+   color: #707070;
+   border: 10px double #eee;
+   margin: 0 auto;
+   font-size: 16px;
+   
+
+ }
+
+
+/*--------------------------------------------------------------
+   ゲーム画面
+--------------------------------------------------------------*/
+ .retry__button{
+   border: none; 
+   padding: 30px; 
+   display: block; 
+   margin: 0 auto; 
+   margin-top: 80px; 
+   font-size: 16px;
+   color: #707070;
+   background-color: #fbfbfa;
+   border-radius: 5px;
+   border-bottom: 3px solid #eee;
+   transition: 0.5s;
+ }
+
+ .retry__button:hover{
+   cursor:pointer;
+   border-bottom: none;
+   transform: translateY(5px);
+   
+ }
