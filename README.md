@@ -18,4 +18,4 @@
 ねこの行動により夕暮れまでの時間がカウントダウンしていき、０分になるとゲームオーバーとなります。
 
 # 開発環境
-macOS(Catallina)、PHP（7.4.2)、MAMP
+macOS(Catallina)、PHP（7.4.2)、MAMP、Photoshop
