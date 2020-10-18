@@ -69,7 +69,6 @@ body {
  }
 
  .back__ground span {
-   /* h1の中のspan */
    font-size: 20px;
  }
 
@@ -96,11 +95,9 @@ body {
  .character__input {
    width: 190px;
    height: 270px;
+   border-style: none;
    bottom: 20px;
    position: absolute;
-   /* background-color: #fbfbfa;
-   border-radius: 5px;
-   border: 2px solid #eee; */
    opacity: 0;
  }
 
@@ -157,11 +154,8 @@ body {
  }
 
 
- /* このdivがないと、メッセージと行動選択がくっついてしまう */
  .game__cats__img__wrap{
-   /* 子要素game__cats__imgのheightをautoにすると高さが同じになる */
    height: 200px;
-   /* 猫の画像とメッセージの位置をこれで調整している */
    margin-bottom: 10px;
  }
 

@@ -453,7 +453,6 @@ if (!empty($_POST)) {
     retry();
   }
 
-  // ブラウザの進む戻るで思わぬPOSTデータが送信されるのを防ぐ
   $_POST = array();
 }
 
@@ -472,7 +471,6 @@ if (!empty($_POST)) {
 
 <body>
 
-  <!-- セッションが空であればスタート画面 -->
   <?php if (empty($_SESSION)) : ?>
 
     <section class='back__ground back__ground__day'>
@@ -483,7 +481,6 @@ if (!empty($_POST)) {
 
       <form method='post' action=''>
 
-        <!-- type=image だとnameが＄_SESSIONに入らない -->
         <input type='submit' name='boy' class='character__input boys__input' value='けんたくん'>
         <img src="img/boy.gif" alt="" class='character__img'>
 
@@ -498,8 +495,6 @@ if (!empty($_POST)) {
     </section>
 
   <?php else : ?>
-
-    <!-- セッションが入っていれば -->
 
     <?php if (!empty($_SESSION['gameover'])) : ?>
 
@@ -519,8 +514,6 @@ if (!empty($_POST)) {
     <?php else : ?>
      
 
-
-      <!-- そうでなければゲーム画面 -->
       <section class='back__ground back__ground__day'>
 
         <div class='hp__message'>
